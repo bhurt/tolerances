@@ -16,7 +16,7 @@ static/tolerances.js: static work/tolerances.js
 work:
 	mkdir $@
 
-work/tolerances.js: work src/main.ts
+work/tolerances.js: work src/main.ts src/test.ts
 	$(TSC) $(TSCOPTS) --outfile $@ src/main.ts
 
 .PHONY: clean
